@@ -11,7 +11,7 @@ If you are using Discord.js or Eris then this module is already built with full 
 To get started 
 ```
 const cheweyBotAnalyticsAPI=require("discord-bot-analytics")
-const customAnalytics = new cheweyBotCustomAPILib("YOUR API TOKEN", discordBot)
+const customAnalytics = new cheweyBotAnalyticsAPI("YOUR API TOKEN", discordBot)
 ```
 If you using Discord.js or Eris then thats all you rreporting is setup
 
