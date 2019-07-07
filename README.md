@@ -27,7 +27,7 @@ https://api.chewey-bot.ga/analytics/getlatest/YOUR-USERID
 # What can I track
 Currently supported: servers, users, channels, sent messages, received messages, Ram
 
-#Details
+# Details
 Analytics are reported at 10minute intervals and stored forever (Details below)
 
 As time goes on the stats will become more aggregated when stored on the server (Up per day stats)
