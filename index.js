@@ -84,8 +84,7 @@ class Analytics{
      * @returns {Promise<String|null>}
      */
     sendReport(body){
-        console.log("Sending rep",body);
-        
+        // console.log("Sending rep",body);
         return httpsPost(body,this.options.apiToken)
     }
 }
