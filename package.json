@@ -1,0 +1,22 @@
+{
+  "name": "discord-bot-analytics",
+  "version": "1.0.0",
+  "description": "Get your discord bot analyitcs with ease",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CheweyZ/discord-bot-analytics.git"
+  },
+  "keywords": [
+    "discord",
+    "bot",
+    "analytics",
+    "easy"
+  ],
+  "author": "CheweyZ",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CheweyZ/discord-bot-analytics/issues"
+  },
+  "homepage": "https://github.com/CheweyZ/discord-bot-analytics#readme"
+}
