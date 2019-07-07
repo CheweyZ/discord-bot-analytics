@@ -13,7 +13,7 @@ To get started
 const cheweyBotAnalyticsAPI=require("discord-bot-analytics")
 const customAnalytics = new cheweyBotAnalyticsAPI("YOUR API TOKEN", discordBot)
 ```
-If you using Discord.js or Eris then thats all you rreporting is setup
+If you using Discord.js or Eris then thats all you reporting is setup
 
 # How to access my analytics
 Webdash board (soon)
