@@ -36,6 +36,6 @@ As time goes on the stats will become more aggregated when stored on the server 
 
 # Whats the catch
 There is none as long as I can pay the bills then this service will be free 
-Want like the service or want to help out then checkout https://www.patreon.com/CheweyZ
+Like the service or want to help out then checkout https://www.patreon.com/CheweyZ
 
 Perks coming soon: Higher resolution data (per minute)
