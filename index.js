@@ -34,7 +34,7 @@ class Analytics{
                 this.startAutoReport()
                 // send initial on load
                 this.sendReport(this.buildBody(this.options.discordBot)).then(() => {}, () => {})
-            }, 5000);
+            }, 15000);
         }
     }
 
@@ -93,8 +93,8 @@ function httpsPost(body,auth){
     return new Promise((resolve,reject)=>{
         const data = JSON.stringify(body)
         const options = {
-            hostname: 'api.chewey-bot.ga', //"api.localhost.com"
-            port: 443, //8080,
+            hostname: 'api.chewey-bot.ga',
+            port: 443,
             path: '/analytics/post',
             method: 'POST',
             headers: {
@@ -103,7 +103,6 @@ function httpsPost(body,auth){
                 'Authorization': auth
             }
         }
-        // const http=require("http")
         const req = https.request(options, (res) => {
             let body = '';
             res.on('data', function (d) {
