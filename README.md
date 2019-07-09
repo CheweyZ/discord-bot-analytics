@@ -16,7 +16,10 @@ const customAnalytics = new cheweyBotAnalyticsAPI("YOUR API TOKEN", discordBot)
 If you using Discord.js or Eris then thats all you reporting is setup
 
 # How to access my analytics
-Webdash board (soon)
+Webdash board (Very Simple)
+https://cheweyz.github.io/discord-bot-analytics-dash/index.html?id=YOU-USERID
+
+Demo: https://cheweyz.github.io/discord-bot-analytics-dash/index.html?id=220625669032247296
 
 Get all stats for chart (fetch every 5 minutes)
 https://api.chewey-bot.ga/analytics/getall/YOUR-USERID
