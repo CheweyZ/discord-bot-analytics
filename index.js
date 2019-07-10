@@ -30,11 +30,13 @@ class Analytics{
                 }
             })
             // allow bot to warmup
-            setTimeout(() => {
-                this.startAutoReport()
-                // send initial on load
-                this.sendReport(this.buildBody(this.options.discordBot)).then(() => {}, () => {})
-            }, 15000);
+            discordBot.on("ready",()=>{
+                setTimeout(() => {
+                    this.startAutoReport()
+                    // send initial on load
+                    this.sendReport(this.buildBody(this.options.discordBot)).then(() => {}, () => {})
+                }, 10000);
+            })
         }
     }
 
