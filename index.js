@@ -29,6 +29,12 @@ class Analytics{
                     this.options.sent_messages++;
                 }
             })
+            discordBot.on("message", (msg) => {
+                this.options.received_messages++;
+                if (msg.author.id == discordBot.user.id) {
+                    this.options.sent_messages++;
+                }
+            })
             // allow bot to warmup
             discordBot.on("ready",()=>{
                 setTimeout(() => {
