@@ -3,7 +3,7 @@ Record discord bot analytics with ease
 
 
 # Getting started
-To first get started you will need a key to use https://api.chewey-bot.ga/ (Free)
+To first get started you will need a key to use https://api.chewey-bot.top/ (Free)
 
 
 If you are using Discord.js or Eris then this module is already built with full auto reporting
@@ -22,10 +22,10 @@ https://cheweyz.github.io/discord-bot-analytics-dash/index.html?id=YOU-USERID
 Demo: https://cheweyz.github.io/discord-bot-analytics-dash/index.html?id=220625669032247296
 
 Get all stats for chart (fetch every 5 minutes)
-https://api.chewey-bot.ga/analytics/getall/YOUR-USERID
+https://api.chewey-bot.top/analytics/getall/YOUR-USERID
 
 Getting latest (fetch every minute)
-https://api.chewey-bot.ga/analytics/getlatest/YOUR-USERID
+https://api.chewey-bot.top/analytics/getlatest/YOUR-USERID
 
 # What can I track
 Currently supported: servers, users, channels, sent messages, received messages, Ram
