@@ -100,7 +100,7 @@ function httpsPost(body,auth){
     return new Promise((resolve,reject)=>{
         const data = JSON.stringify(body)
         const options = {
-            hostname: 'api.chewey-bot.ga',
+            hostname: 'api.chewey-bot.top',
             port: 443,
             path: '/analytics/post',
             method: 'POST',
