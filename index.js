@@ -74,10 +74,10 @@ class Analytics{
      */
     buildBody(discordBot){
         // Eris : Discord.js
-        let channelCount = discordBot.channelGuildMap ? Object.keys(discordBot.channelGuildMap).length : discordBot.channels.size
+        let channelCount = discordBot.channelGuildMap ? Object.keys(discordBot.channelGuildMap).length : discordBot.channels.cache.size
         let reply= {
-            servers:discordBot.guilds.size,
-            users:discordBot.users.size,
+            servers:discordBot.guilds.size?discordBot.guilds.size:discordBot.guilds.cache.size,
+            users:discordBot.users.size?discordBot.users.size:discordBot.users.cache.size,
             channels:channelCount,
             sent_messages:this.options.sent_messages,
             received_messages: this.options.received_messages,

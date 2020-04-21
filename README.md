@@ -4,6 +4,7 @@ Record discord bot analytics with ease
 
 # Getting started
 To first get started you will need a key to use https://api.chewey-bot.top/ (Free)
+Click on any endpoint to view the steps on getting a token
 
 
 If you are using Discord.js or Eris then this module is already built with full auto reporting
@@ -18,6 +19,7 @@ If you using Discord.js or Eris then thats all you reporting is setup
 # How to access my analytics
 Webdash board (Very Simple)
 https://cheweyz.github.io/discord-bot-analytics-dash/index.html?id=YOU-USERID
+(Your UserID is your personal one NOT your botID)
 
 Demo: https://cheweyz.github.io/discord-bot-analytics-dash/index.html?id=220625669032247296
 
@@ -26,6 +28,52 @@ https://api.chewey-bot.top/analytics/getall/YOUR-USERID
 
 Getting latest (fetch every minute)
 https://api.chewey-bot.top/analytics/getlatest/YOUR-USERID
+
+# Demo Bot
+The following is an example for Eris
+```
+const Eris = require("eris");
+
+const bot = new Eris("BOT_TOKEN");
+
+/* Simply add these 2 lines to start tracking */
+const cheweyBotAnalyticsAPI=require("discord-bot-analytics")
+const customAnalytics = new cheweyBotAnalyticsAPI("YOUR API TOKEN", bot)
+
+bot.on("ready", () => {
+    console.log("Ready!");
+});
+
+bot.on("messageCreate", (msg) => {
+    if(msg.content === "!ping") {
+        bot.createMessage(msg.channel.id, "Pong!");
+    }
+});
+
+bot.connect(); // Get the bot to connect to Discord
+```
+
+Discord.js
+```
+const Discord = require('discord.js');
+const client = new Discord.Client();
+
+/* Simply add these 2 lines to start tracking */
+const cheweyBotAnalyticsAPI=require("discord-bot-analytics")
+const customAnalytics = new cheweyBotAnalyticsAPI("YOUR API TOKEN", client)
+
+client.on('ready', () => {
+  console.log(`Ready!`);
+});
+
+client.on('message', msg => {
+  if (msg.content === 'ping') {
+    msg.reply('Pong!');
+  }
+});
+
+client.login('token');
+```
 
 # What can I track
 Currently supported: servers, users, channels, sent messages, received messages, Ram

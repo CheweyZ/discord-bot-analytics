@@ -1,6 +1,6 @@
 {
   "name": "discord-bot-analytics",
-  "version": "1.0.13",
+  "version": "1.0.14",
   "description": "Get your discord bot analytics with ease",
   "main": "index.js",
   "repository": {
